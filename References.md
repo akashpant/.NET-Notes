@@ -119,7 +119,7 @@ Using ==
 String.equals
 string.compare
 
-- Collections in c#
+### Collections in c#
 Collection provides a way
 .net supports 2 types of collections. generic and non generic 
 
