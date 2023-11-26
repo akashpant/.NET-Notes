@@ -34,13 +34,16 @@ It allows u to declare the static member which belongs to the type itself instea
  
 ### IN, REF and OUT keyword - 
 
-IN variable - In variable must be initialized before passing to any called method. Its value can't be updated in the called method. If u try to update the value of the in 
+#### IN variable -
+In variable must be initialized before passing to any called method. Its value can't be updated in the called method. If u try to update the value of the in 
 variable in the called method it will throw an error. So it's like a readonly variable only.
 
-REF - Ref is also like the in variable and it must be initialized before passing to any called method. but its value can be updated in the called method. ref keyword causes an 
+#### REF - 
+Ref is also like the in variable and it must be initialized before passing to any called method. but its value can be updated in the called method. ref keyword causes an 
 argument to be passed by reference. 
 
-OUT - for out keyword its not necessary to initialize it before passing to any called method. it goes naked in the called method and its value will be update in the called 
+#### OUT - 
+for out keyword its not necessary to initialize it before passing to any called method. it goes naked in the called method and its value will be update in the called 
 method. it will comes out with the clothes. 
 
 - Method hiding or method shadowing - method hiding is the also known as method shadowing. shadowing is a vb.net concept. if u don't want to override the base class method 
@@ -65,7 +68,8 @@ B objecct = new B()
 b.voidDisplay()
 }
 
-OUTPUT -> Now the above command will print the 'B' on the console but with a warning that if u want the method hiding then use new keyword.
+OUTPUT -> 
+Now the above command will print the 'B' on the console but with a warning that if u want the method hiding then use new keyword.
 
 now if in the class B if u do use 
 
