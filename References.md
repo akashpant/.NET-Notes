@@ -91,7 +91,7 @@ for eg. int a = 10;
  o = 13;
  a = int(o);(Unboxing explicit conversion you need to add an additional int keyword to type cast that variable)
 
- Boxing is implicit and unboxing is explicit. 
+#### Boxing is implicit and unboxing is explicit. 
  
 -Method overloading - Method overloading is a way to implement polymorphism. its a type of polymorphism. IN method overloading u can create the same name 
 method in a class but with the different method signature. method signature involves the no. of parameters, the sequence of them and the type of parameters but is does not 
@@ -156,7 +156,7 @@ MSIL - Microsoft Intermediate Language
 Managed Code and Unmanaged Code - Managed code managed by CLR. not managed by any entity.
 
 
-how to setup a project
+#### how to setup a project
 
 - Created a project
 - Chose a Api controller without read/write actions 
@@ -167,7 +167,7 @@ how to setup a project
 
 
 
-how to implement swagger in project ->
+#### how to implement swagger in project ->
 
 - Need to add Swagger in configure method 
 
@@ -187,7 +187,7 @@ there are 2 places the .net framework/core stores the items in memory as your co
 
 stack vs heap need to watch video 
 
-using statement in c#
+#### using statement in c#
 in c# all unmanaged code and class libraries must implement IDisposable or IAsyncDisposable interface for memory utilization. 
 the using statement ensures the use of IDisposable and IAsyncDisposable interfaces. When the object's lifetime is limited to 
 a single method then it is necessary to dispose that object after using the method. when we define any variable with using statement we can't 
@@ -204,7 +204,8 @@ var reader = new StringReader(message);
 
 
 
-difference between fromsqlraw and fromsqlinterpolated   -> fromsqlraw and fromsqlinterpolated both are the methods in the entity framework core and usedd to get the data 
+#### difference between fromsqlraw and fromsqlinterpolated   -> 
+fromsqlraw and fromsqlinterpolated both are the methods in the entity framework core and usedd to get the data 
 from the database through the sql queries. they serves a similar purpose but there are some differences between them :
 
 1. Query Building - 
@@ -225,7 +226,7 @@ FromSqlInterpolated -> interpolated queries are more often more readble and main
 the query's intent. 
 
 
-What if we pass parameters into the fromsqlraw query? will compiler throws the error?
+#### if we pass parameters into the fromsqlraw query? will compiler throws the error?
 No, the C# compiler will not throw an error if you use string interpolation with FromSqlRaw. we can use string interpolation within a FromSqlRaw query because the
  method expects a string, and string interpolation results in a string. but we need to be cautious while using interpolation into the fromsqlraw becauuse the user can input any 
  variable and it can lead to the Sql injection vulnerabilities.
