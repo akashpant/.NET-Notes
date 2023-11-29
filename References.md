@@ -25,9 +25,9 @@ It allows u to declare the static member which belongs to the type itself instea
  
 #### Inheritance - 
  Inheritance is one of the principle of the OOP. through inheritence we can use the function of 1 class into the other class. the class of which we are using the 
- function is known as base class and the class in which we are using that function is known as derived class. OR Parent and Child class. Inheritance is of 3 to 4 types:
- Single inheritence, multiple inheritence, multilevel inheritence. C# does not support multiple inheritence means one class can't be inherit from more than 1 class. but multiple
- inheritance can be achieved using interfaces. 
+ function is known as base class and the class in which we are using that function is known as derived class. OR Parent and Child class. 
+ ##### Inheritance is of 3 to 4 types:
+ Single inheritence, multiple inheritence, multilevel inheritence. C# does not support multiple inheritence means one class can't be inherit from more than 1 class. but multiple inheritance can be achieved using interfaces. 
  
 #### Polymorphism - 
  Polymorphism is one of the principle of the OOP. polymorphism means one word many forms. it is of 2 types. Method Overloading, Method overriding. 
@@ -52,30 +52,38 @@ in the child class then its method hiding and you are using the same method defi
 you use the new keyword to hiding the base class implementation of the base class method.  
 
 for eg. like
-class A{
-
-public void Display(){
-Console.WriteLine('A')
-}
-}
-
-class B : C{
-public void Display(){
-Console.WriteLine('B')}}
-
-class D{
-
-B objecct = new B()
-b.voidDisplay()
+class A: 
+{
+  public void Display()
+  {
+  Console.WriteLine('A')
+  }
 }
 
-OUTPUT -> 
+class B : 
+{
+  public void Display()
+  {
+  Console.WriteLine('B')
+  }
+}
+
+class D: 
+{
+  B objecct = new B()
+  b.voidDisplay()
+}
+
+##### OUTPUT -> 
 Now the above command will print the 'B' on the console but with a warning that if u want the method hiding then use new keyword.
 
 now if in the class B if u do use 
 
-new public void Display{
-COnsole.WriteLine('B'){
+new public void Display
+{
+  Console.WriteLine('B')
+  {
+
 It will not throw the error. and the method hiding will get achieved.
 
 
@@ -87,28 +95,35 @@ a value type. OR when the value is extracted from the object type.
 
 for eg. int a = 10;
  
- object o  = a; (implicit boxing no need to add any keyword for type conversion)
+ object o  = a; 
+ (implicit boxing no need to add any keyword for type conversion)
  
  o = 13;
- a = int(o);(Unboxing explicit conversion you need to add an additional int keyword to type cast that variable)
+ a = int(o);
+ (Unboxing explicit conversion you need to add an additional int keyword to type cast that variable)
 
 #### Boxing is implicit and unboxing is explicit. 
  
--Method overloading - Method overloading is a way to implement polymorphism. its a type of polymorphism. IN method overloading u can create the same name 
+##### Method overloading - 
+Method overloading is a way to implement polymorphism. its a type of polymorphism. IN method overloading u can create the same name 
 method in a class but with the different method signature. method signature involves the no. of parameters, the sequence of them and the type of parameters but is does not 
 include the return type of the method. for eg. 
 
-class A{
-
-void Display(int i){
-COnsole.WriteLine(i);
+class A
+{
+  void Display(int i)
+    {
+      Console.WriteLine(i);
+    }
+  void Display(int j, int i)
+    {
+      Console.WriteLine(j,i)
+    }
+  void Display(string i, string j, int k)
+    {
+      Console.WriteLine(i,j,k);
+    }
 }
-void Display(int j, int i){
-Console.WriteLine(j,i)
-}
-void Display(string i, string j, int k){
-Console.WriteLine(i,j,k);
-}}
 
 all the three method's name is same but the different method signature but the return type of the methods is same. 
 
@@ -135,53 +150,45 @@ Sorted List -----> Sorted List<T>
 Hash Table ------> dictionary<T>
 Array List -------> list<T> 
 
-Non generic - > Array List -> ArrayList is same as the array but it can contain the elements of different type and 
+##### Non generic - > 
+Array List -> ArrayList is same as the array but it can contain the elements of different type and 
 its size can be dynamic. it can be of any size. 
 
-Hash Table -> hash table is same as of the array list but it contains the element in the key value pairs.
+##### Hash Table -> 
+hash table is same as of the array list but it contains the element in the key value pairs.
 
-Sortedlist -> it is the combination of array list and hash table but it contains/represents the element in the
+##### Sortedlist -> 
+it is the combination of array list and hash table but it contains/represents the element in the
 key value pair and in the sorted order. 
 
-Stack -> stack contains the elements. 
+##### Stack -> 
+stack contains the elements. 
 
-
-
-
-
-JIT Compiler - Just in time compiler used to convert intermediate code into native code. and the compiler converts the code
+##### JIT Compiler - 
+Just in time compiler used to convert intermediate code into native code. and the compiler converts the code
 into intermediate code. 
 
 MSIL - Microsoft Intermediate Language
-
 Managed Code and Unmanaged Code - Managed code managed by CLR. not managed by any entity.
 
-
 #### how to setup a project
-
-- Created a project
+- Create a project
 - Chose a Api controller without read/write actions 
-- APi will always be of IActionResult return type like public async Task<IActionResult>
--IN the APi header we write [ProducesResponseType(StatusCodes.Status200Ok) and all the status which can api consume
-- We did added the service and the repository file in the startup file in ConfigureServices method
-- 
-
+- API will always be of IActionResult return type like public async Task<IActionResult>
+- IN the APi header we write [ProducesResponseType(StatusCodes.Status200Ok) and all the status which can api consume
+- We did added the service and the repository file in the startup file in ConfigureServices method.
 
 
 #### how to implement swagger in project ->
-
 - Need to add Swagger in configure method 
-
 1.  app.UseSwagger()
 2.  app.UseSwaggerUi(c => {
 c.SwaggerEndpoint("swagger/v1/swagger.json","testing_v1")
 }); 
-
 then need to add Swagger in ConfigureServices method too
 
 3. services.AddSwaggerGen(c => {
       c.SwaggerDoc("v1", new OpenApiInfo {Title = "testing", Version = "v1"})});
-
 
 # Stack and Heap 
 there are 2 places the .net framework/core stores the items in memory as your code executes. these 2 are stack and heap. they both helps us to run our code. 
@@ -191,19 +198,11 @@ stack vs heap need to watch video
 #### using statement in c#
 in c# all unmanaged code and class libraries must implement IDisposable or IAsyncDisposable interface for memory utilization. 
 the using statement ensures the use of IDisposable and IAsyncDisposable interfaces. When the object's lifetime is limited to 
-a single method then it is necessary to dispose that object after using the method. when we define any variable with using statement we can't 
-update that variable means that is read only. and either the code runs successfully or get any exception in the method that object will get
-disposed so it works as a try finally block. we can also declare one or more variables in a single using statement.
+a single method then it is necessary to dispose that object after using the method. when we define any variable with using statement we can't update that variable means that is read only. and either the code runs successfully or get any exception in the method that object will get disposed so it works as a try finally block. we can also declare one or more variables in a single using statement.
 
 string message = 'hello how are you!';
-
 using 
-
 var reader = new StringReader(message);
-
-
-
-
 
 #### difference between fromsqlraw and fromsqlinterpolated   -> 
 fromsqlraw and fromsqlinterpolated both are the methods in the entity framework core and usedd to get the data 
@@ -231,8 +230,7 @@ the query's intent.
 No, the C# compiler will not throw an error if you use string interpolation with FromSqlRaw. we can use string interpolation within a FromSqlRaw query because the
  method expects a string, and string interpolation results in a string. but we need to be cautious while using interpolation into the fromsqlraw becauuse the user can input any 
  variable and it can lead to the Sql injection vulnerabilities.
-
-                       
+                
 3999  -> 1234567890 ->       
 stock    moneyCapital ->    
 
@@ -244,7 +242,6 @@ first before run them
 - Web application - the application for which we don't need to download on our systems to run. like any online webapplication -> Gmail, facebook
 
 # Programming Types: MOnolithic, Procedural, Object Oriented 
-
 - Console Application -> that can be run in the command prompt. 
 
 # Data types in c# 
@@ -280,7 +277,6 @@ which will handle by controller.
 
 Controller - it will get the requests and will handle those requests and will return the result to the view.its a C# class which inherits from the ControllerBase class. 
 
-
 MVC Application ->  Created empty MVC application and then push to github added the github creds and pushed the repo to github
 
 Folder structure -> Properties-> in launch settings file we can define the3 profile for the applciation. and all these profiles will be shown as option in the Run Command box(from 
@@ -296,16 +292,16 @@ DbContext file -> to communicate the model with the database we need to have a d
 the DbContext base class.
 
 where we have many to many relation there we do use join tables concepts. 
-
-
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-MVC -> what is MVC -> MVC is an architectural software design pattern used to develop software applications in which we do have views to interact with. and based on these views some 
+### MVC -> 
+what is MVC -> MVC is an architectural software design pattern used to develop software applications in which we do have views to interact with. and based on these views some 
 events occur which will handled by Controllers.
 MVC is not only used for creating web based applications but its also used for creating mobile based applications and desktop applications where there we have a view/user
 interaction associated/involved .
 
-3 Components of MVC are : Model, View, Controller.
+3 Components of MVC are : 
+Model, View, Controller.
 
 Model -> Model is the component which handles with the data. it used to fetch the data and to handle the business logic, it also handles the validations and other all the related 
 things to database. it is used to interact with database where we have any kind of need of database we do use model.
@@ -317,13 +313,12 @@ the user.
 Controller -> Controller is the last component of the MVC architecture. all the business logic are present in the controllers. controller gets the request from the views and 
 then controller acts with the models(if required). controllers are the one which interacts with both model and views. 
 
-
-ASP.net MVC -> ASP.net MVC is a web application development framework which follows the MVC design pattern which provides a clean seperation 
+### ASP.net MVC -> 
+ASP.net MVC is a web application development framework which follows the MVC design pattern which provides a clean seperation 
 of code. and it was provided by microsoft. it was the most customizable and extensible framework provided by microsoft. 
 
 NOTE -> so the point is MVC and asp.net MVC both are different. MVC is a architectural software design pattern whereas asp.net MVC is a web application development framework 
 which based on the MVC pattern. 
-
 
 what are model, view and controller from asp.net MVC point of view 
 -> 	Mostly similar as of MVC pattern
@@ -334,31 +329,29 @@ what are model, view and controller from asp.net MVC point of view
 page controller pattern approach, every aspx page has its own controller i.e code behind .aspx.cs file which is used to process the requests. whereas in asp.net MVC, a common 
 controller is used for all the requests of all the pages.
 
-ASP.net MVC is not going to replace asp.net web forms technique to create web applications. 
+ASP.net MVC is not going to replace asp.net web forms technique to create web applications.
 
-- 
-
-
-
-Request flow for the asp.net mvc application  
-
-- Client makes a request => Routing ENGINE will check if the incoming url exist or not in the route table -> if no url then will return a 404 HTTP status code to the client else
+#### Request flow for the asp.net mvc application  
+- Client makes a request =>
+- Routing ENGINE will check if the incoming url exist or not in the route table -> if no url then will return a 404 HTTP status code to the client else
  if exist then it fetches the corresponding handler information and forwards the request to the controller and the action method in the controller. then the controller will do its
  action and will interact with model(if required) and after doing its work it will check the view to which we neeed to show on the UI.
- 
+
+
 What is View Model in ASP.net MVC
-
-
 
 .asmx -> web services
 .aspx -> represents web pages created using ASp.net web forms, a technology for building dynamic web applications.
 
-what is ASP.NET MVC -> ASP.Net MVC is a web application development framework provided by microsoft that is based on the MVC architectual design pattern. It is an Open source
+what is ASP.NET MVC -> 
+ASP.Net MVC is a web application development framework provided by microsoft that is based on the MVC architectual design pattern. It is an Open source
 framework built on top of the .net framework to develop a web application that enables a clean code seperation. It is a complete alternative to ASP.net Webforms.  
 
-ASP.NET MVC -> is a framework while MVC is an architectual design pattern. 
+ASP.NET MVC -> 
+is a framework while MVC is an architectual design pattern. 
 
-MVC -> MVC is an architectual design pattern which is used to developing interactive applications which includes the user interface. and based on the user interactions 
+MVC -> 
+MVC is an architectual design pattern which is used to developing interactive applications which includes the user interface. and based on the user interactions 
 some actions are performed. it is not only used for web applications but also can create mobile applications and desktop applications where there is user interaction involved. 
 
 MVC design pattern was introduced in 1970 that basically divides an application into 3 major parts: model, view and Controller. the main objective of the mvc design pattern is 
@@ -372,7 +365,8 @@ Controller ->
 - every controller must be located in the Controllers folder.
 
 
-Views -> the view component contains the logic to represent the model data as a user interface with which the end user can interact. typically it creates the user interface with 
+Views -> 
+the view component contains the logic to represent the model data as a user interface with which the end user can interact. typically it creates the user interface with 
 the data model provided to it by controllers. 
 
 Models -> the models in asp.net mvc application are the componenets that contains a set of classes that are used to represent the business data as well as logic to manage the
