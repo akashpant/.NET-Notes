@@ -46,7 +46,8 @@ argument to be passed by reference.
 for out keyword its not necessary to initialize it before passing to any called method. it goes naked in the called method and its value will be update in the called 
 method. it will comes out with the clothes. 
 
-- Method hiding or method shadowing - method hiding is the also known as method shadowing. shadowing is a vb.net concept. if u don't want to override the base class method 
+#### Method hiding or method shadowing - 
+method hiding is the also known as method shadowing. shadowing is a vb.net concept. if u don't want to override the base class method 
 in the child class then its method hiding and you are using the same method definition in the child class. Method hiding can be achieved by using new keyword. in method hiding 
 you use the new keyword to hiding the base class implementation of the base class method.  
 
