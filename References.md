@@ -212,7 +212,8 @@ from the database through the sql queries. they serves a similar purpose but the
 FromSQLRaw -> this method allows you to execute raw sql queries by providing a raw sql string directly. you write a sql query string and sql executes it as it is. you need to ensure
 that sql query is properly formatted and secure against sql injection. 
 
-FromSqlInterpolated - This method allow you to build sql queries using interpolated strings. this means you can embed variables and expressions directly into the sql query making
+#### FromSqlInterpolated - 
+This method allow you to build sql queries using interpolated strings. this means you can embed variables and expressions directly into the sql query making
 it more type safe and less error prone compared to manually constructing sql strings. 
 
 2. Type Safety
@@ -268,9 +269,9 @@ predefined DataType -> int, bool, char, float and userDefined -> Enumeratio…
 
 
 
-MVC -> model view controller
+### MVC -> model view controller
 
-MOdel- for data intercations with the database we do use models.it contains the business logic.  
+Model- for data intercations with the database we do use models.it contains the business logic.  
 
 View- its a file which represents the user interface. its a .cshtml file. CS stands for C Sharp and HTML represents html code. from view u can trigger any request 
 which will handle by controller.
@@ -317,7 +318,8 @@ then controller acts with the models(if required). controllers are the one which
 ASP.net MVC is a web application development framework which follows the MVC design pattern which provides a clean seperation 
 of code. and it was provided by microsoft. it was the most customizable and extensible framework provided by microsoft. 
 
-NOTE -> so the point is MVC and asp.net MVC both are different. MVC is a architectural software design pattern whereas asp.net MVC is a web application development framework 
+NOTE -> 
+so the point is MVC and asp.net MVC both are different. MVC is a architectural software design pattern whereas asp.net MVC is a web application development framework 
 which based on the MVC pattern. 
 
 what are model, view and controller from asp.net MVC point of view 
@@ -343,11 +345,11 @@ What is View Model in ASP.net MVC
 .asmx -> web services
 .aspx -> represents web pages created using ASp.net web forms, a technology for building dynamic web applications.
 
-what is ASP.NET MVC -> 
+###### what is ASP.NET MVC -> 
 ASP.Net MVC is a web application development framework provided by microsoft that is based on the MVC architectual design pattern. It is an Open source
 framework built on top of the .net framework to develop a web application that enables a clean code seperation. It is a complete alternative to ASP.net Webforms.  
 
-ASP.NET MVC -> 
+##### ASP.NET MVC -> 
 is a framework while MVC is an architectual design pattern. 
 
 MVC -> 
