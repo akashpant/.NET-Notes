@@ -1,6 +1,6 @@
 ### SOLID Principles
 
-The SOLID principle was introduced by <b>Robert C. Martin</b>, also known as Uncle Bob.(not king Bob ! >8-D)
+The SOLID principle was introduced by <b>Robert C. Martin</b>, also known as Uncle Bob.(not king Bob !😂)
 
 S -> Single Responsibility Principle (SRP)
 O -> Open/Closed Principle
