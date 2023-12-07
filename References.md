@@ -26,6 +26,7 @@ It allows u to declare the static member which belongs to the type itself instea
 #### Inheritance - 
  Inheritance is one of the principle of the OOP. through inheritence we can use the function of 1 class into the other class. the class of which we are using the 
  function is known as base class and the class in which we are using that function is known as derived class. OR Parent and Child class. 
+ 
  ##### Inheritance is of 3 to 4 types:
  Single inheritence, multiple inheritence, multilevel inheritence. C# does not support multiple inheritence means one class can't be inherit from more than 1 class. but multiple inheritance can be achieved using interfaces. 
  
@@ -271,14 +272,17 @@ predefined DataType -> int, bool, char, float and userDefined -> Enumeratio…
 
 ### MVC -> model view controller
 
-Model- for data intercations with the database we do use models.it contains the business logic.  
+#### Model- 
+for data intercations with the database we do use models.it contains the business logic.  
 
 View- its a file which represents the user interface. its a .cshtml file. CS stands for C Sharp and HTML represents html code. from view u can trigger any request 
 which will handle by controller.
 
-Controller - it will get the requests and will handle those requests and will return the result to the view.its a C# class which inherits from the ControllerBase class. 
+#### Controller - 
+it will get the requests and will handle those requests and will return the result to the view.its a C# class which inherits from the ControllerBase class. 
 
-MVC Application ->  Created empty MVC application and then push to github added the github creds and pushed the repo to github
+#### MVC Application ->
+Created empty MVC application and then push to github added the github creds and pushed the repo to github
 
 Folder structure -> Properties-> in launch settings file we can define the3 profile for the applciation. and all these profiles will be shown as option in the Run Command box(from 
 where we run the project). 
