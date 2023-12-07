@@ -2,10 +2,8 @@
 
 The SOLID principle was introduced by <b>Robert C. Martin</b>, also known as Uncle Bob.(not king Bob !😂)
 
-<p>
-#### <b>S</b> -> Single Responsibility Principle (SRP)
-#### <b>O</b> -> Open/Closed Principle
-#### <b>L</b> -> Liskov’s Substitution Principle (LSP)
-#### <b>I</b> -> Interface Segregation Principle (ISP)
-#### <b>D</b> -> Dependency Inversion Principle (DIP)
-</p>
+#### S -> Single Responsibility Principle (SRP)
+#### O -> Open/Closed Principle
+#### L -> Liskov’s Substitution Principle (LSP)
+#### I -> Interface Segregation Principle (ISP)
+#### D -> Dependency Inversion Principle (DIP)
