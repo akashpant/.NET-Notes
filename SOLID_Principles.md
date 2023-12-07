@@ -7,3 +7,5 @@ The SOLID principle was introduced by <b>Robert C. Martin</b>, also known as Unc
 #### L -> Liskov’s Substitution Principle (LSP)
 #### I -> Interface Segregation Principle (ISP)
 #### D -> Dependency Inversion Principle (DIP)
+
+The SOLID principle helps in reducing tight coupling. Loosely coupled classes minimize changes in your code, helps in making code more reusable, maintainable, flexible and stable.
