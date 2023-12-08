@@ -181,7 +181,7 @@ Managed Code and Unmanaged Code - Managed code managed by CLR. not managed by an
 
 
 #### how to implement swagger in project ->
-- Need to add Swagger in configure method 
+-> Need to add Swagger in configure method 
 1.  app.UseSwagger()
 2.  app.UseSwaggerUi(c => {
 c.SwaggerEndpoint("swagger/v1/swagger.json","testing_v1")
@@ -289,7 +289,8 @@ where we run the project).
 
 wwwRoot section-> this is also known as the static file section. if u have any files that are static then you will keep those in the wwwroot section. 
 
-Views -> for each controller we'll have a specific folder inside view folder.
+#### Views -> 
+for each controller we'll have a specific folder inside view folder.
 we have a Error.cshtml file in Views folder which is getting used to show error if we have any error in the file. 
 appSettings.json -> configuration file 
 
