@@ -306,8 +306,10 @@ events occur which will handled by Controllers.
 MVC is not only used for creating web based applications but its also used for creating mobile based applications and desktop applications where there we have a view/user
 interaction associated/involved .
 
-3 Components of MVC are : 
-Model, View, Controller.
+Three Components of MVC are : 
+- Model
+- View
+- Controller.
 
 Model -> Model is the component which handles with the data. it used to fetch the data and to handle the business logic, it also handles the validations and other all the related 
 things to database. it is used to interact with database where we have any kind of need of database we do use model.
