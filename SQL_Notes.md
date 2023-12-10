@@ -46,4 +46,4 @@ It allows us to perform the below-listed functions:
 10. What is the difference between primary key and unique constraints? 
 The primary key cannot have NULL values, the unique constraints can have NULL values. There is only one primary key in a table, but there can be multiple unique constraints. The primary key creates the clustered index automatically but the unique key does not.
 
-11. clustered vs non clustured.
+11. clustered vs non clustured  . . . 
