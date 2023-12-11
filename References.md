@@ -625,7 +625,8 @@ public class HomeController : Controller
 }
 
 
-- RedirectToAction -> The RedirectToAction result in mvc is resulting  the result to a specified controller and action method. Controller name is optional in redirectToAction method. 
+# RedirectToAction -> 
+The RedirectToAction result in mvc is resulting  the result to a specified controller and action method. Controller name is optional in redirectToAction method. 
 if not mentioned the controller name the it will redirects to the mentioned action method in the current controller.  
 
 public class HomeController : Controller
