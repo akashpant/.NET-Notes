@@ -12,6 +12,6 @@ The SOLID principle helps in reducing tight coupling. Loosely coupled classes mi
 
 S -> One class should have one purpose. <br />
 O -> Entities can be open for extension but closed for modification. <br />
-L -> Child class could be replaced in case of parent class.(parent - rectangle, child - rectangle with equal edges) <br />
+L -> Child class could be replaced in place of parent class.(parent - rectangle, child - rectangle with equal edges) <br />
 I -> Only required functionality of interface should be present in a class, interfaces should only have single purpose. <br />
 D -> High Level modules should not depened on low level modules, it makes it tightly coupled, tv remove is depenedent on battery but not on brand of battery. <br />
