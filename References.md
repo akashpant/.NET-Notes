@@ -406,7 +406,7 @@ request.
 Route Constraints -> route constraints are used to restrict the user to access the route for the specific constraints. we can add constraint on any route by using the 
 routing methods. if we want to restrict that the route only takes numeric values in the route then we can specify the regular expression constraint while defining the route. 
 
-Difference between routing and URL rewriting 
+#### Difference between routing and URL rewriting 
 routing and url rewriting are very different since both looks similar. 
 - URL rewriting mainly  focus on mapping one URL(new url) to another URL(old URL) while routing is focused on mapping a url to a resource i.e controller action method.
 - URL rewriting rewrites your old url to new url while routing never rewrites your old url to new url.
