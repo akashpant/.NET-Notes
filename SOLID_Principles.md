@@ -20,7 +20,7 @@ Tight Coupling Leads to :-
 - Extra Time to implement any new requirements, feature or bug fixes and may result to unknown issues.
 - Duplicate Code, Code which is not testable, Fixing old bug result in new bug, unknown issue.
 
-Things Needed for creating a successful application
+**Things Needed for creating a successful application**
 1. Architechture
 2. Design Patterns
 3. Design Principle (SOLID)
